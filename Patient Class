@@ -1,0 +1,41 @@
+# Patient Class
+class Patient:
+    def __init__(self, PID, Name, Disease, Gender, Age):
+        self.PID = PID
+        self.Name = Name
+        self.Disease = Disease
+        self.Gender = Gender
+        self.Age = Age
+
+    def get_patient_pid(self):
+        return self.PID
+
+    def get_patient_name(self):
+        return self.Name
+
+    def get_patient_disease(self):
+        return self.Disease
+
+    def get_patient_gender(self):
+        return self.Gender
+
+    def get_patient_age(self):
+        return self.Age
+
+    def set_patient_pid(self, N_PID):
+        self.PID = N_PID
+
+    def set_patient_name(self, N_Name):
+        self.Name = N_Name
+
+    def set_patient_disease(self, N_Disease):
+        self.Disease = N_Disease
+
+    def set_patient_gender(self, N_Gender):
+        self.Gender = N_Gender
+
+    def set_patient_age(self, N_Age):
+        self.Age = N_Age
+
+    def __str__(self):
+        return str(f"{self.PID}", "_", {self.Name}, "_", {self.Disease}, "_", {self.Disease}, "_", {self.Gender}, "_", {self.Age})
